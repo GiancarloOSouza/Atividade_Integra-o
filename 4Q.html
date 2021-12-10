@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade Integração Q4</title>
+        
+        
+    </head>
+
+    <body>
+        <h1>4º Questão</h1>
+
+
+        <h3>Programa Parquímetro</h3>
+        <p>
+            Valor:
+            <input type='text' id='inNumero'>    
+        </p>
+
+        
+        
+        <button type='button' onclick="q4()">Mostrar</button>
+
+        <script src="script.js"></script>
+
+        
+
+    </body>
+</html>
+
+<script>
+
+function q4(){
+
+    let numero = document.getElementById('inNumero')
+    
+    let x = Number(numero.value)
+    
+    let a = 1
+    let b = 1.75
+    let c = 3
+    switch(x)
+    {
+        case x < 1:
+            alert('Valor Insuficiente')
+            break;
+        case x = 1:
+            alert('Tempo: 30 minutos')
+            break;
+        case x > 1 && x < b:
+            let troco = x - a
+            alert('Tempo: 30 minutos\nTroco = ' + troco)
+            break;
+        case x = b:
+            alert('Tempo: 60 minutos')
+            break;
+        case x > b && x < c:
+            let troco = x - b
+            alert('Tempo: 60 minutos\n Troco: ' + troco)
+            break;
+        case x = c:
+            alert('Tempo: 120 minutos')
+            break;
+        case x > c:
+            let troco = x - c
+            alert('Tempo: 120 minutos\n Troco: ' + troco)
+            break;
+    }
+}
+</script>

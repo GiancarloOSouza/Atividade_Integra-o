@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade Integração Q1</title>
+        
+        
+    </head>
+
+<body>
+    <h1>1º Questão</h1>
+
+
+    <h3>Programa Raiz Quadrada</h3>
+    <p>
+        Número:
+        <input type='text' id='inNumero'>
+    </p>
+    
+    <button type='button' onclick="q1()">Mostrar</button>
+
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>
+
+<script>
+    function q1(){
+
+let numero = document.getElementById('inNumero')
+
+
+let numero1 = Number(inNumero.value)
+
+let raiz = Math.sqrt(numero1)
+if(raiz % 1 === 0)
+{
+    alert('A raiz de' + numero1 + 'é' + raiz)
+}else{
+    alert('O numero ' + numero1 + ', não tem raiz')
+}
+    }
+</script>

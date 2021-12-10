@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade Integração Q1</title>
+        
+        
+    </head>
+
+<body>
+    <h1>2º Questão</h1>
+
+
+    <h3>Programa Par ou Impar</h3>
+    <p>
+        Número:
+        <input type='text' id='inNumero'>
+    </p>
+    
+    <button type='button' onclick="q2()">Verificar se par ou impar</button>
+
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>
+
+<script>
+    function q2(){
+
+        let numero = document.getElementById('inNumero')
+
+
+        let numero1 = Number(inNumero.value)
+
+        if(numero1 % 2 ==0)
+        {
+            alert('O numero ' + numero1 + ' é par')
+        }else{
+            alert('O numero ' + numero1 + ' é impar')
+        }
+    }
+</script>
